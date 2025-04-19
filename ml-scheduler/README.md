@@ -16,7 +16,7 @@ algorithms such as FIFO, Round Robin (RR), Multilevel Queue (MLQ), and Completel
 - training/train_rf_scheduler.py [trains Random Forest using FIFO-based labels]
 - schedulers/ml_scheduler.py [schedules using the trained Random Forest model]
 - schedulers/fifo.py [FIFO scheduler based on arrival_time order]
-- schedulers/rr.py [ Round Robin scheduler using a default quantum of 4]
+- schedulers/rr.py [ Round Robin scheduler using a default quantum of 10]
 - schedulers/mlq.py [MLQ splits based on priority and handles in priority order]
 - schedulers/cfs.py [ CFS computes virtual runtimes and runs the process with least vruntime]
 - results/results_report.ipynb

@@ -1,6 +1,7 @@
 import json
 import pandas as pd
 
+
 def rr_schedule(data, quantum=10):
     df = pd.DataFrame(data).sort_values('arrival_time')
     time, schedule, ready = 0, [], []
@@ -29,6 +30,7 @@ def rr_schedule(data, quantum=10):
             ready.append(p)
 
     return schedule
+
 
 if __name__ == '__main__':
     with open("dataset/testing/uniform_test.json") as f:
